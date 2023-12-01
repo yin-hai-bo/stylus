@@ -1,0 +1,30 @@
+@-moz-document domain("legacy.cplusplus.com") {
+    :root {
+        --bk-color: #222;
+        --fk-color: #eee;
+        
+        --primary-font: Georgia, Cambria, Consolas;
+        --code-font: CamingoCode, Consolas;
+    }
+    
+    BODY, TABLE, INPUT, SELECT, TEXTAREA {
+        font-family: var(--primary-font);
+    }
+    
+    body, #I_main, #I_file {
+        font-family: var(--primary-font) !important;
+    }
+    
+    section dt {
+        font-family: var(--primary-font) !important;
+    }
+    
+    pre, tt {
+        font-family: var(--code-font);
+        color: #008080;
+    }
+    
+    code, samp {
+        font-family: var(--code-font);
+    }
+}
