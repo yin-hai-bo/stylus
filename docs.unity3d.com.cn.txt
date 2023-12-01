@@ -13,17 +13,11 @@
     
     h1, h2, h3 {
         font-family: var(--font-sans-serif);
-        font-weight: 200;
+        font-weight: 600;
     }
     
     b, strong {
-        font-weight: 400;
-        color: #ffffe0;
-    }
-    
-    #master-wrapper h1, #master-wrapper h2,
-    #master-wrapper h3 {
-        color: #ea5900 !important;
+        font-weight: 500;
     }
     
     code {
