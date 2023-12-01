@@ -1,0 +1,32 @@
+@-moz-document url-prefix("https://docs.unity3d.com/cn/") {
+    :root {
+        --font-serif: 思源宋体;
+        --font-sans-serif: 思源黑体,微软雅黑;
+        --font-code: CamingoCode, Consolas;
+    }
+    
+    body, p , td {
+        font-weight: 200;
+        font-family: var(--font-serif);
+        font-size: large;
+    }
+    
+    h1, h2, h3 {
+        font-family: var(--font-sans-serif);
+        font-weight: 200;
+    }
+    
+    b, strong {
+        font-weight: 400;
+        color: #ffffe0;
+    }
+    
+    #master-wrapper h1, #master-wrapper h2,
+    #master-wrapper h3 {
+        color: #ea5900 !important;
+    }
+    
+    code {
+        font-family: var(--font-code);
+    }
+}
