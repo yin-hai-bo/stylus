@@ -1,0 +1,274 @@
+/* ==UserStyle==
+@name           8.208 - 2023/11/8 11:47:41
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+
+@-moz-document url-prefix("http://192.168.8.208:8081/#/"), url-prefix("http://gerrit.sh.wsdashi.com:3128/#/") {
+
+    :root {
+        --primary-text-color: #f0f0f0;
+        --downplay-text-color: #777;
+        --highlight-text-color: #f0c000;
+        --background-color: #2c2c2c;
+        --table-border-color: #666;
+        --table-header-color: #344;
+        --table-highlight-backgound-color: #444;
+        --font-family: CamingoCode, Consolas, "思源宋体";
+        --button-color: #cdd;
+        --panel-color: #777;
+        
+        --keyword-color: var(--highlight-text-color);
+        --string-color: #0ef;
+        --number-color: var(--string-color);
+        --builtin-color: #f88;
+        --variable-color: var(--primary-text-color);
+    }
+    
+    body {
+        background: var(--background-color);
+        color: var(--primary-text-color);
+        font-family: var(--font-family);
+    }
+    table td, select {
+        font-family: var(--font-family);
+    }
+    
+    /**** Open Merged Abandoned ****/
+    
+    div.gwt-Label {
+        color: var(--primary-text-color);
+    }
+    
+    a.menuItem {
+        color: var(--highlight-text-color);
+    }
+    .menuScreenMenuBar .menuItem.activeRow, .menuItem.activeRow {
+        background: var(--table-border-color);
+    }
+    
+    .changeTable .iconHeader {
+        border: 1px solid transparent;
+        background-color: var(--table-header-color);
+    }
+    .changeTable .dataHeader {
+        color: var(--primary-text-color);
+        background-color: var(--table-header-color);
+    }
+    .changeTable .iconCell, .changeTable .dataHeader, .changeTable .dataCell {
+        border-color: transparent !important;
+    }
+    .changeTable .activeRow {
+        background-color: var(--table-highlight-backgound-color) !important;
+    }
+    .changeTable a.gwt-InlineHyperlink {
+        color: var(--primary-text-color) !important;
+    }
+    
+    /**** Commit information *******/
+    
+    a, a:visited {
+        color: var(--highlight-text-color);
+    }
+
+    .com-google-gerrit-client-change-CommitBox_BinderImpl_GenCss_style-text {
+        font-family: var(--font-family);
+    }
+    
+    .com-google-gerrit-client-change-CommitBox_BinderImpl_GenCss_style-scroll {
+        border-right: 1px solid var(--table-border-color);
+        border-bottom: 1px solid var(--table-border-color);
+    }
+    
+    .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-infoTable th {
+        color: var(--downplay-text-color);
+    }
+   
+   
+    .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-headerLine,
+    .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-sectionHeader,
+    .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-subjectLine {
+        background: var(--table-header-color);
+        color: var(--downplay-text-color);
+    }
+    
+    button {
+        font-family: var(--font-family);
+        background: var(--button-color) !important;
+        font-size: 100% !important;
+    }
+    button:disabled {
+        color: #bbb !important;
+        background: #888 !important;
+    }
+    button:disabled div {
+        color: #bbb !important;
+        background: inherit;
+    }
+    button.com-google-gwtexpui-clippy-client-ClippyCss-copier, button.com-google-gwtexpui-user-client-Tooltip-Css-tooltip {
+        background: transparent !important;
+    }
+    
+    input {
+        font-family: var(--font-family);
+    }
+    
+    .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_user,
+    button.com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-highlight div {
+        color: #A05000;
+    }
+
+    .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-label_need {
+        color: var(--downplay-text-color);
+    }
+    
+    .com-google-gerrit-client-change-FileTable-FileTableCss-pathColumn a {
+        color: var(--primary-text-color);
+    }
+    
+    .com-google-gerrit-client-change-ChangeScreen_BinderImpl_GenCss_style-replyBox,
+    div.userInfoPopup {
+        background: var(--panel-color);
+        border: 0px;
+    }
+    
+    .com-google-gerrit-client-change-PatchSetsBox_BinderImpl_GenCss_style-table tr.com-google-gerrit-client-change-PatchSetsBox_BinderImpl_GenCss_style-current {
+        background: #999;
+    }
+    
+    .com-google-gerrit-client-change-PatchSetsBox_BinderImpl_GenCss_style-commit {
+        font-family: inherit;
+    }
+    
+    .com-google-gerrit-client-change-Message_BinderImpl_GenCss_style-messageBox {
+        border-color: var(--table-border-color);        
+    }
+    
+    .com-google-gerrit-client-change-RelatedChanges-RelatedChangesCss-tabPanel .gwt-TabBarItem-selected {
+        background: inherit !important;
+    }
+    
+    .gwt-TabBarRest-wrapper .gwt-TabBarRest {
+        background: transparent !important;
+    }
+    
+    .com-google-gerrit-client-change-RelatedChanges-RelatedChangesCss-activeRow {
+        background: #888 !important;
+    }
+
+    /**** Diff ****/
+    
+    .CodeMirror {
+        font-family: inherit;
+    }
+    
+    div.CodeMirror-code {
+        background: var(--background-color);
+        color: var(--primary-text-color);
+    }
+    
+    .cm-comment {
+        color: var(--downplay-text-color) !important;
+    }
+    
+    .cm-keyword, .cm-attribute {
+        color: var(--keyword-color) !important;
+    }
+    
+    .cm-operator, .cm-tag {
+        color: var(--primary-text-color) !important;
+    }
+    .cm-string, .cm-number, .cm-atom {
+        color: var(--string-color) !important;
+    }
+    span.cm-string.cm-property {
+        color: var(--keyword-color) !important;
+    }
+    
+    .cm-builtin {
+        color: var(--builtin-color) !important;
+    }
+    
+    .cm-variable, .cm-variable-3, .cm-def {
+        color: var(--variable-color) !important;
+    }
+    
+    .com-google-gerrit-client-diff-SideBySideTable_BinderImpl_GenCss_style-patchSetNav, .com-google-gerrit-client-diff-SideBySideTable_BinderImpl_GenCss_style-diff_header {
+        background: var(--table-header-color);
+    }
+    
+    .com-google-gerrit-client-diff-SkipBar_BinderImpl_GenCss_style-skipBar {
+        background: #444;
+    }
+    
+    .com-google-gerrit-client-diff-SideBySideTable_BinderImpl_GenCss_style-b .com-google-gerrit-client-diff-SideBySideTable_BinderImpl_GenCss_style-diff {
+        background: #004a00;
+    }
+    
+    .com-google-gerrit-client-diff-SideBySideTable_BinderImpl_GenCss_style-b .com-google-gerrit-client-diff-SideBySideTable_BinderImpl_GenCss_style-intralineBg {
+        background: #226a22;
+    }
+    .com-google-gerrit-client-diff-DiffTable_BinderImpl_GenCss_style-b .com-google-gerrit-client-diff-DiffTable_BinderImpl_GenCss_style-diff,
+    .com-google-gerrit-client-diff-DiffTable_BinderImpl_GenCss_style-b .com-google-gerrit-client-diff-DiffTable_BinderImpl_GenCss_style-intralineBg
+    
+    {
+        background: #004a00;
+    }
+    
+    .com-google-gerrit-client-diff-SideBySideTable_BinderImpl_GenCss_style-a .com-google-gerrit-client-diff-SideBySideTable_BinderImpl_GenCss_style-intralineBg,
+    .com-google-gerrit-client-diff-DiffTable_BinderImpl_GenCss_style-a .com-google-gerrit-client-diff-DiffTable_BinderImpl_GenCss_style-intralineBg {
+        background: #433
+    }
+    
+
+    .com-google-gerrit-client-diff-SideBySideTable_BinderImpl_GenCss_style-a .com-google-gerrit-client-diff-SideBySideTable_BinderImpl_GenCss_style-diff,
+    .com-google-gerrit-client-diff-DiffTable_BinderImpl_GenCss_style-a .com-google-gerrit-client-diff-DiffTable_BinderImpl_GenCss_style-diff {
+        background: #800
+    }
+
+    /** Project Settings **/
+    
+    td.specialBranchDataCell, td.specialBranchIconCell {
+        color: var(--primary-text-color);
+        background: transparent;
+        border: none
+    }
+    
+    .changeTable .dataCell, .changeTable .iconCell {
+        color: var(--primary-text-color);
+        background: var(--background-color);
+    }
+    
+    .addBranch, .addSshKeyPanel {
+        background: var(--table-header-color);
+    }
+    
+    .changeTable .sectionHeader {
+        background-color: var(--background-color);
+    }
+    .accountDashboard.changeTable tr {
+        color: var(--downplay-text-color);
+    }
+    .changeTable .activeRow, .accountDashboard.changeTable .activeRow, .accountDashboard.changeTable .activeRow a {
+        background-color: var(--background-color) !important;
+    }
+
+    table.createProjectPanel {
+        background: var(--background-color);
+    }
+    input.gwt-TextBox, input.gwt-SuggestBox {
+        color: var(--highlight-text-color);
+        background: var(--background-color);
+    }
+    
+    span.rpcStatus {
+        background: red;
+        color: yellow;
+    }
+    button.searchButton {
+        background: black !important;
+    }
+}
+
